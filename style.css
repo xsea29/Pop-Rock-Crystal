@@ -45,7 +45,7 @@ body {
   border-radius: 50%;
   filter: blur(100px);
   opacity: 90%;
-  z-index: 0;
+  z-index: -1;
 }
 
 .gradient-2 {
@@ -57,7 +57,7 @@ body {
   background-image: radial-gradient(circle, #6ec8fc, #6ec8fc);
   border-radius: 50%;
   filter: blur(80px);
-  z-index: 0;
+  z-index: -1;
 }
 
 .gradient-3 {
@@ -151,23 +151,23 @@ body {
 }
 
 .text-wrapper h2 {
-  font-size: 64px;
+  font-size: 40px;
   font-weight: 400;
   color: #fff;
   z-index: 99;
 }
 
 .text-wrapper h1 {
-  font-size: 75px;
+  font-size: 64px;
   font-weight: 700;
   margin-bottom: 40px;
 }
 
 .text-wrapper .text {
-  width: 56%;
+  width: 80%;
   color: #31546d;
   font-size: 18px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   z-index: 99;
 }
 
@@ -197,9 +197,9 @@ body {
 }
 
 .button-text-wrapper {
-  width: 40%;
+  width: 80%;
   display: flex;
-  justify-content: space-between;
+  gap: 40px;
   align-items: center;
 }
 
@@ -210,8 +210,8 @@ body {
 
 .image-wrapper {
   position: relative;
-  width: 600px;
-  height: 588px;
+  width: 569px;
+  height: 554px;
   background-color: #fff;
   border-radius: 50px;
   box-shadow: 0px 4px 50px 0px #788f9c40;
@@ -220,11 +220,12 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  z-index: 99;
+  z-index: 999;
 }
 
 .image-wrapper img {
   margin-top: 20px;
+  z-index: 999;
 }
 
 .image-wrapper .carausel-text {
@@ -361,31 +362,31 @@ span .active {
 
 .page-2 .item-grid {
   width: 100%;
-  max-width: 1400px;
+  max-width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 332px);
-  grid-template-rows: repeat(2, 425px);
-  gap: 20px;
-  padding: 20px;
-  margin: 60px auto;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: auto;
+  gap: 15px;
+  padding: 10px;
+  margin: 40px auto;
 }
 
 .page-2 .item {
-  width: max-content;
-  padding: 20px;
+  width: 100%;
+  padding: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  font-size: 18px;
-  border: 2px solid #f2f2f2;
-  border-radius: 30px;
+  gap: 8px;
+  font-size: 16px;
+  border: 1px solid #f2f2f2;
+  border-radius: 20px;
   margin: 0 auto;
 }
 
 .page-2 .item h2 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   text-align: center;
   color: Gray 2;
@@ -399,13 +400,13 @@ span .active {
 }
 
 .item button {
-  width: 180px;
-  height: 56px;
-  font-size: 14px;
+  width: 140px;
+  height: 48px;
+  font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
   color: #6fb4ff;
-  border-radius: 18px;
+  border-radius: 15px;
   border: 3px solid;
   background: none;
   border-image: linear-gradient(90deg, #75cceb 0%, #6fb4ff 100%);
@@ -524,7 +525,7 @@ span .active {
 }
 
 .text-container p {
-  width: 58%;
+  width: 90%;
   margin-left: auto;
   font-size: 16px;
   color: #31546d;
