@@ -110,6 +110,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ".button-text-wrapper button",
     {
       x: -250,
+      opacity: 0,
       duration: 0.8,
       ease: "power2.out",
     },
@@ -121,6 +122,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       x: 250,
       duration: 0.8,
+      opacity: 0,
       ease: "power2.out",
     },
     "fifth"
